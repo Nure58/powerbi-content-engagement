@@ -1,1 +1,94 @@
+docs/README.md
+
+````markdown
+Content Engagement Dashboard
+
+Welkom in de repository van je Power BI Content Engagement Dashboard. Dit project is ontwikkeld om inzicht te krijgen in bezoekersgedrag op basis van een mock‑dataset. Hiermee oefen je datamodellering, DAX en rapportontwerp in Power BI.
+
+Inhoud van deze repo
+
+- **data/**: hier vind je de mock‑csv’s met bezoekersstatistieken.
+- **docs/**: documentatie (README, ANALYSIS en DATA_DICTIONARY).
+- **pbix/**: het Power BI‐bestand met het dashboard.
+
+Hoe aan de slag
+
+1. Clone de repository:
+   ```bash
+   git clone https://github.com/<jouw-gebruikersnaam>/powerbi-content-engagement.git
+   cd powerbi-content-engagement
+````
+
+2. Open het dashboard in Power BI Desktop:
+
+   * Navigeer naar `pbix/ContentEngagement.pbix`
+   * Dubbelklik om te openen.
+3. Ververs de data:
+
+   * Vervang de bestanden in `data/` indien je eigen data wilt laden.
+   * Klik in Power BI op **Refresh**.
+
+Licentie & Bijdragen
+
+Dit project is bedoeld voor oefendoeleinden. Voel je vrij om te forken, fouten te melden (issues) of verbeteringen aan te dragen via pull requests.
+
+````
+
+---
+
+## docs/ANALYSIS.md
+
+```markdown
+# Analyse van het Content Engagement Dashboard
+
+Doelstelling
+Met dit dashboard breng je het bezoekgedrag in kaart op drie belangrijke dimensies:
+1. **Scroll­diepte**: hoe ver bezoekers scrollen per uur en per weekdag.
+2. **Click­through rate (CTR)**: hoeveel niet‑abonnees doorklikken naar vervolgpagina's.
+3. **Bounce­rate**: percentage bezoekers dat de site verlaat na één pagina.
+
+Databronnen
+De mock‑data bestaat uit een CSV met kolommen voor datum, unieke bezoekers, scroll­diepte (uur en weekdag), CTR, conversies, SEO‑score, bounce­rate, verkeersbron en categorie.
+
+Belangrijkste bevindingen
+1. **Avondtop in scroll­diepte**: rond 20:00 is de gemiddelde scroll­diepte het hoogst, omdat bezoekers na werktijd meer tijd nemen om content te lezen.
+2. **Donderdag als piekdag**: op donderdag is de scroll­diepte gemiddeld hoger dan op andere weekdagen, mogelijk door weekendplanning.
+3. **Organisch verkeer converteert beter**: bezoekers via Google tonen een hogere conversieratio en blijven langer in de content hangen.
+4. **Recepten behouden bezoekers**: artikelen in de categorie “Recept” hebben de laagste bounce­rate, wat wijst op praktische waarde.
+5. **SEO‑score correleert met bezoekersaantallen in ‘Markt’**: een hogere SEO‑score leidt in deze categorie tot meer unieke bezoekers.
+
+ Aanpak
+1. Inlezen van de CSV in Power Query
+2. Schoonmaken en transformeren van data
+3. Maken van DAX‑maatregelen voor KPI’s
+4. Opzetten van drie rapportpagina’s:
+   - Overzicht (visitors, conversies)
+   - Gedetailleerde engagement (scroll, CTR)
+   - SEO & conversie per categorie
+5. Instellen van filters voor jaar, verkeersbron en categorie
+````
+
+---
+
+ docs/DATA\_DICTIONARY.md
+
+```markdown
+Data Dictionary
+
+Dit document beschrijft alle kolommen in de mock‑dataset:
+
+| Kolomnaam            | Omschrijving                                              | Type     |
+|----------------------|-----------------------------------------------------------|----------|
+| Date                 | Datum (YYYY-MM-DD)                                        | Date     |
+| UniqueVisitors       | Aantal unieke bezoekers per dag                          | Integer  |
+| ScrollDepthHour      | Gemiddelde scroll­diepte per uur (in % van paginalengte)  | Decimal  |
+| ScrollDepthWeekday   | Gemiddelde scroll­diepte per weekdag (in %)              | Decimal  |
+| CTR_NonSubscribers   | Click­through rate voor niet‑abonnees (in %)             | Decimal  |
+| Conversions          | Aantal conversies per dag                                | Integer  |
+| SEO_Score            | SEO‑score (samengestelde metric van trefwoordranking)     | Integer  |
+| BounceRate           | Percentage bezoekers dat na één pagina wegklikt (in %)   | Decimal  |
+| TrafficSource        | Verkeersbron (Organisch, Referral, Social, Direct)       | Text     |
+| Category             | Contentcategorie (Recept, Markt, Trend, etc.)            | Text     |
+| UserSegment          | Segment (Abonnee of Niet‑abonnee)                         | Text     |
+```
 
