@@ -51,11 +51,11 @@ Databronnen
 De mock‑data bestaat uit een CSV met kolommen voor datum, unieke bezoekers, scroll­diepte (uur en weekdag), CTR, conversies, SEO‑score, bounce­rate, verkeersbron en categorie.
 
 Belangrijkste bevindingen
-1. **Avondtop in scroll­diepte**: rond 20:00 is de gemiddelde scroll­diepte het hoogst, omdat bezoekers na werktijd meer tijd nemen om content te lezen.
-2. **Donderdag als piekdag**: op donderdag is de scroll­diepte gemiddeld hoger dan op andere weekdagen, mogelijk door weekendplanning.
-3. **Organisch verkeer converteert beter**: bezoekers via Google tonen een hogere conversieratio en blijven langer in de content hangen.
-4. **Recepten behouden bezoekers**: artikelen in de categorie “Recept” hebben de laagste bounce­rate, wat wijst op praktische waarde.
-5. **SEO‑score correleert met bezoekersaantallen in ‘Markt’**: een hogere SEO‑score leidt in deze categorie tot meer unieke bezoekers.
+1. Avondtop in scroll­diepte: rond 20:00 is de gemiddelde scroll­diepte het hoogst, omdat bezoekers na werktijd meer tijd nemen om content te lezen.
+2. Donderdag als piekdag: op donderdag is de scroll­diepte gemiddeld hoger dan op andere weekdagen, mogelijk door weekendplanning.
+3. Organisch verkeer converteert beter: bezoekers via Google tonen een hogere conversieratio en blijven langer in de content hangen.
+4. Recepten behouden bezoekers: artikelen in de categorie “Recept” hebben de laagste bounce­rate, wat wijst op praktische waarde.
+5. SEO‑score correleert met bezoekersaantallen in ‘Markt’: een hogere SEO‑score leidt in deze categorie tot meer unieke bezoekers.
 
  Aanpak
 1. Inlezen van de CSV in Power Query
