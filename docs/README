@@ -7,9 +7,9 @@ Welkom in de repository van je Power BI Content Engagement Dashboard. Dit proj
 
 Inhoud van deze repo
 
-- **data/**: hier vind je de mock‑csv’s met bezoekersstatistieken.
-- **docs/**: documentatie (README, ANALYSIS en DATA_DICTIONARY).
-- **pbix/**: het Power BI‐bestand met het dashboard.
+- data/: hier vind je de mock‑csv’s met bezoekersstatistieken.
+- docs/: documentatie (README, ANALYSIS en DATA_DICTIONARY).
+- pbix/: het Power BI‐bestand met het dashboard.
 
 Hoe aan de slag
 
@@ -26,7 +26,7 @@ Hoe aan de slag
 3. Ververs de data:
 
    * Vervang de bestanden in `data/` indien je eigen data wilt laden.
-   * Klik in Power BI op **Refresh**.
+   * Klik in Power BI op Refresh.
 
 Licentie & Bijdragen
 
@@ -43,9 +43,9 @@ Dit project is bedoeld voor oefendoeleinden. Voel je vrij om te forken, fouten t
 
 Doelstelling
 Met dit dashboard breng je het bezoekgedrag in kaart op drie belangrijke dimensies:
-1. **Scroll­diepte**: hoe ver bezoekers scrollen per uur en per weekdag.
-2. **Click­through rate (CTR)**: hoeveel niet‑abonnees doorklikken naar vervolgpagina's.
-3. **Bounce­rate**: percentage bezoekers dat de site verlaat na één pagina.
+1. Scroll­diepte: hoe ver bezoekers scrollen per uur en per weekdag.
+2. Click­through rate (CTR): hoeveel niet‑abonnees doorklikken naar vervolgpagina's.
+3. Bounce­rate: percentage bezoekers dat de site verlaat na één pagina.
 
 Databronnen
 De mock‑data bestaat uit een CSV met kolommen voor datum, unieke bezoekers, scroll­diepte (uur en weekdag), CTR, conversies, SEO‑score, bounce­rate, verkeersbron en categorie.
